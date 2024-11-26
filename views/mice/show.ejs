@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <title>
+            <%= mice.name %>
+        </title> <!-- Dynamic title based on fruit name -->
+    </head>
+
+    <body>
+        <h1>
+            <%= mice.name %>
+        </h1>
+        <!-- Conditional rendering based on fruit's readiness -->
+        <h2>
+            <p><strong>Type:</strong> <%= mice.dropdown %></p>
+        </h2>
+            <% if (mice.isReadyToClick) { %>
+        <p>This mouse is ready to Click!</p>
+            <% } else { %>
+            <p>This mouse is not ready to Click`!!</p>
+        <% } %>
+                <!-- new delete button -->
+        <form action="/mice/<%=mice._id%>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= mice.name %></button>
+        </form>
+        <a href="/mice/<%= mice._id %>/edit">Edit <%= mice.name %></a>
+        <a href="/mice/">Back to All Mice</a>
+    </body>
+</html>

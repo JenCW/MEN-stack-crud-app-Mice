@@ -1,0 +1,294 @@
+/* RESET ====================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY: Center Everything Vertically and Horizontally */
+body {
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  min-height: 100vh; /* Full height of the viewport */
+  font-family: Georgia, 'Times New Roman', sans-serif; /* Clean font */
+  background-color: #fdf6e4; /* Light cream background */
+  color: #333; /* Neutral text color */
+}
+
+/* CONTAINER: Centralized Content */
+.containerhome {
+  display: flex; /* Flexbox for internal alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-evenly; /* Evenly distribute content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center-align text */
+  background-color: #f8f8f8; /* White background */
+  border: 3px solid rgb(158, 44, 3); /* Dark coral */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 9px 10px 20px rgba(93, 88, 88, 0.825); /* Subtle shadow */
+  padding: 40px;
+  width: 70%; /* Takes up 75% of the viewport width */
+  height: 75vh; /* Takes up 75% of the viewport height */
+}
+
+.containerform {
+  display:Flex; /* Flexbox for internal alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-evenly; /* Evenly distribute content vertically */
+  align-items: center; /* Center content horizontally */
+  align-content: center; /* Center content horizontally */
+  text-align: center; /* Center-align text */
+  font-size: 1.75rem; /* Large main title */
+  background-color: #f8f8f8; /* White background */
+  border: 3px solid rgb(158, 44, 3); /* Dark coral */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 9px 10px 20px rgba(93, 88, 88, 0.825); /* Subtle shadow */
+  padding: 70px;
+  width: 70%; /* Takes up 75% of the viewport width */
+  height: 75vh; /* Takes up 75% of the viewport height */
+}
+.  {
+  display:block inline; /* Flexbox for internal alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-evenly; /* Evenly distribute content vertically */
+  align-items: center; /* Center content horizontally */
+  align-content: center; /* Center content horizontally */
+  text-align: center; /* Center-align text */
+  font-size: 1.75rem; /* Large main title */
+  background-color: #f8f8f8; /* White background */
+  border: 3px solid rgb(158, 44, 3); /* Dark coral */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 9px 10px 20px rgba(93, 88, 88, 0.825); /* Subtle shadow */
+  padding: 70px;
+  width: 70%; /* Takes up 75% of the viewport width */
+  height: 75vh; /* Takes up 75% of the viewport height */
+}
+.containerViewsIndex   {
+  display: flex; /* Flexbox for internal alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-evenly; /* Evenly distribute content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center-align text */
+  font-size: 1.55rem;
+  background-color: #f8f8f8; /* White background */
+  border: 3px solid rgb(158, 44, 3); /* Dark coral */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 9px 10px 20px rgba(93, 88, 88, 0.825); /* Subtle shadow */
+  padding: 20px;
+  width: 70%;
+  height: 75vh;
+  line-height: 1.5;
+}
+
+
+
+/* HEADERS ====================================== */
+h1 {
+  font-size: 4rem; /* Large main title */
+  color: #00d0b7; /* Teal color */
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2.8rem; /* Subheader size */
+  color: #ff7043; /* Coral color for contrast */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.75rem;
+  color: #555; /* Softer grey for regular text */
+  margin-bottom: 30px;
+}
+
+/* IMAGE STYLING ====================================== */
+img {
+  height: auto; /* Maintain aspect ratio */
+  max-width: 80%;
+  margin: 20px 0; /* Space around the image */
+  border-radius: 5px; /* Optional: Rounded image corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for pop */
+}
+
+/* BUTTON GROUP ====================================== */
+.button-group {
+  display: flex; /* Align buttons in a row */
+  justify-content: center; /* Center them horizontally */
+  align-items: center;
+  gap: 20px; /* Add spacing between buttons */
+  margin-top: 20px;
+}
+
+/* BUTTON-LIKE LINKS */
+.box-link {
+  display: inline-block;
+  padding: 20px 20px;
+  background-color: #00d0b7; /* Teal background */
+  color: #ffffff; /* White text */
+  text-transform: uppercase; /* Capitalized text */
+  text-decoration: none; /* Remove underline */
+  border: solid #d23100 3px; /* Coral border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 3px 7px 17px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  font-size: 1.25rem; /* Larger text */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.box-link:hover {
+  background-color: #eb7b59; /* Darker teal */
+  transform: translateY(-3px); /* Lift effect */
+}
+
+/* FOOTER ====================================== */
+footer {
+  margin-top: 50px;
+  font-size: 0.8rem;
+  color: #777; /* Neutral grey */
+}
+
+footer a {
+  color: #00796b; /* Teal link */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff7043; /* Coral hover effect */
+}
+
+/* FORM STYLING ====================================== */
+form {
+  display: flex;
+  flex-direction:column;
+  border: 3px solid #00d0b7;
+  padding:70px;
+  gap: 15px; /* Space between elements */
+  justify-content: space-between; /* Spread elements evenly */
+  align-items: center; /* Align elements vertically */
+
+  width: 100%; /* Full width of the container */
+}
+
+form label {
+  font-weight: bold;
+  color: #00d0b7; /* Teal for emphasis */
+  flex-basis: 100%; /* Labels span the full width */
+  text-align: left; /* Align labels to the left */
+}
+
+form input[type="text"], form select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Rounded corners */
+  width: calc(50% - 15px); /* Adjust width for side-by-side layout */
+  min-width: 180px; /* Ensure fields don’t shrink too much */
+}
+
+form input[type="checkbox"] {
+  transform: scale(2); /* Make the checkbox bigger */
+  margin: 10px; /* Adjust spacing */
+}
+
+form button {
+  padding: 20px 25px;
+  width: 250px;
+  height: 75px;
+  background-color: #d23100; /* Teal button */
+  color: #ffffff; /* White text */
+  border: none;
+  margin-bottom: 20px; /* Space below the button */
+  cursor: pointer;
+  font-weight: bold;
+  font-size:1.65rem;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+form button:hover {
+  background-color: #005f56; /* Darker teal */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* FORM CONTAINER ====================================== */
+
+
+/* FORM STYLING ====================================== */
+form {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 20px; /* Add space between form elements */
+  width: 100%; /* Full form width */
+}
+
+/* FORM GROUPS ====================================== */
+.group {
+  display: flex;
+  flex-direction: column; /* Stack label and input/dropdown */
+  align-items: flex-start; /* Align to the left */
+  width: 100%; /* Full width of the form container */
+}
+
+.group label {
+  font-weight: bold;
+  color: #00796b; /* Teal for emphasis */
+  margin-bottom: 5px; /* Add space below the label */
+}
+
+.group input,
+.group select {
+  width: 100%; /* Full width of input fields */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+/* CHECKBOX ALIGNMENT ====================================== */
+.form-isReadyToClick {
+  display: flex;
+  align-items: center; /* Align checkbox and label vertically */
+  gap: 10px; /* Add space between label and checkbox */
+}
+
+.form-isReadyToClick label {
+  margin: 0; /* Remove additional margins */
+}
+
+/* SUBMIT BUTTON ====================================== */
+form button {
+  background-color: #00796b; /* Teal button */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover */
+}
+
+form button:hover {
+  background-color: #005f56; /* Darker teal */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* BACK LINK ====================================== */
+.button-link {
+  display: inline-block;
+  margin-top: 20px; /* Add space above the link */
+  padding: 10px 20px;
+  background-color: #00796b; /* Teal background */
+  color: #ffffff; /* White text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover */
+}
+
+.button-link:hover {
+  background-color: #005f56; /* Darker teal */
+  transform: translateY(-3px); /* Lift effect */
+}

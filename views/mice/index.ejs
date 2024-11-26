@@ -1,0 +1,29 @@
+<!-- views/mice/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Mice Index</title>
+    
+
+  </head>
+<body>
+  <div class="containerViewsIndex">
+    <h1>All Mice</h1>
+    <div > <img src="/images/mouse5.png" alt="Happy Mouse"></div>
+    <ul>
+      <% mice.forEach(mice => { %>
+        <li>
+          <a href="/mice/<%= mice._id %>"> <%= mice.name %> </a>
+        </li>
+      <% }); %>
+    </ul>
+    <h5> Select a mouse above to Edit or Delete it.</h5>
+    <hr>
+    <a href="/">Back to Home</a>
+    </div>
+  </body>
+</html>

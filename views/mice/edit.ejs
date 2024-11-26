@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <h1>Edit <%= mice.name %></h1>
+
+  <form action="/mice/<%= mice._id %>?_method=PUT" method="POST">
+
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="<%= mice.name %>" />
+    </div><br>
+
+    <div>
+      <label for="isReadyToClick">Ready to Click?</label>
+      <input type="checkbox" id="isReadyToClick" name="isReadyToClick" <% if (mice.isReadyToClick) { %>checked<% } %>>
+    </div><br>
+
+    <div>
+      <label for="dropdown">Mouse Type:</label>
+      <select id="dropdown" name="mouseType">
+        <option value="living" <% if (mice.mouseType==='living' ) { %>selected<% } %>>living</option>
+        <option value="inanimate" <% if (mice.mouseType==='inanimate' ) { %>selected<% } %>>Inanimate</option>
+      </select>
+    </div><br>
+
+     <button type="submit">Update Mice</button>
+  </form>
+  <a href="/mice" class="button-link">Back to mice</a>
+</body>
+
+</html>

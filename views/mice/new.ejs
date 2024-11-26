@@ -1,0 +1,43 @@
+<!-- views/fruits/new.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Add New Mouse</title>
+</head>
+
+<body>
+  <div class="containerform">
+    <h1> Add New Mice!</h1>
+    <img src="/images/mouse.png" alt="Happy Mouse">
+    <div class="New Form">
+
+      <form action="/mice" method="POST">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="type of mouse"><br>
+</div><br>
+    <div>
+        <label for="isReadyToClick">Ready to Click?</label>
+        <input type="checkbox" name="isReadyToClick" id="isReadyToClick"><br>
+    </div><br>
+    <div>
+        <label for="dropdown">Mouse Type:</label>
+        <select id="dropdown" name="dropdown">
+          <option value="living">Living</option>
+          <option value="inanimate">Inanimate</option><br>
+        </select>
+    </div><br>
+
+        <button type="submit">Add Mouse</button>
+        <a href="/mice">Back to All Mice</a>
+        <a href="/">Back to Home</a>
+      </form>
+    </div>
+    </div>
+</body>
+
+</html>
